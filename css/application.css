@@ -1,0 +1,172 @@
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+body, html {
+  background: #000;
+  color: #ddd;
+  font-family: Georgia, "Palatino", "Palatino Linotype", Times, "Times New Roman", serif;
+  font-weight: 300;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.logo h1 {
+  display: block;
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  text-indent: -9999em;
+  background-image: url('/img/badge.png');
+  background-repeat: no-repeat;
+  background-size: 85px 85px;
+}
+
+/* Type */
+
+h1, h2, h3, h4, h5 {
+  font-family: "adelle-1","adelle-2", serif;
+  font-weight: 600;
+  color: #a1a1a1;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+a, a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+/* Intro Section */
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  text-align: left;
+}
+
+.headline {
+  display: inline-block;
+  margin: 45px auto 0 auto;
+  text-align: center;
+}
+
+.headline h4 {
+  line-height: 1;
+  margin: 0;
+}
+
+.headline h2 {
+  margin: 0;
+  width: 176px;
+  height: 51px;
+  text-indent: -9999em;
+  background-image: url('/img/name.png');
+  background-repeat: no-repeat;
+  background-size: 176px 51px;
+}
+
+/* Who Section */
+
+.who {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-top: 1px solid #343434;
+  border-bottom: 1px solid #343434;
+  border-top: 1px solid rgba(52,52,52,0.7);
+  border-bottom: 1px solid rgba(52,52,52,0.7);
+
+}
+
+.who h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.who .maker {
+  text-align: left;
+  width: 240px;
+  display: block;
+  margin: 0 auto 25px auto;
+}
+
+.who .maker:last-child {
+  margin-bottom: 0;
+}
+
+.maker .mug {
+  float: left;
+  padding: 4px;
+  margin-right: 15px;
+  background: #6e6e6e;
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.maker .mug img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #1a1a1a;
+  border: 1px solid rgba(26, 26, 26, 0.8);
+}
+
+.maker h3 {
+  line-height: 1.8;
+  margin: 0;
+}
+
+.maker a {
+  font-family: "adelle-1","adelle-2", serif;
+}
+
+/* What */
+
+.what {
+  margin-bottom: 25px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  .who .maker {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (min-width: 865px) {
+  .who .maker {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    padding: 0 6%;
+  }
+}
